@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketMisakiVoiceover", "RocketMisakiVoiceover\RocketMisakiVoiceover.csproj", "{40AB085E-1171-4D04-BD38-24B4F83F53A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40AB085E-1171-4D04-BD38-24B4F83F53A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40AB085E-1171-4D04-BD38-24B4F83F53A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40AB085E-1171-4D04-BD38-24B4F83F53A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40AB085E-1171-4D04-BD38-24B4F83F53A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0E25100-99BC-4442-A641-9998C15BDC51}
+	EndGlobalSection
+EndGlobal
