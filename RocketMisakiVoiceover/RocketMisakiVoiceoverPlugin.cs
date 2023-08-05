@@ -17,7 +17,7 @@ namespace RocketMisakiVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor")]
     [BepInDependency("com.KrononConspirator.RocketMisaki")]
-    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.0.0")]
+    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.0.2")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -168,7 +168,7 @@ namespace RocketMisakiVoiceover
             orig(self);
             if (self)
             {
-                if (self.bodyIndex == BodyCatalog.FindBodyIndex("RocketSurvivorBody"))//(RocketMisakiVoiceoverComponent.requiredSkinDefs.Contains(SkinCatalog.GetBodySkinDef(self.bodyIndex, (int)self.skinIndex)))
+                if (self.bodyIndex == BodyCatalog.FindBodyIndex("RocketSurvivorBody") && (RocketMisakiVoiceoverComponent.requiredSkinDefs.Contains(SkinCatalog.GetBodySkinDef(self.bodyIndex, (int)self.skinIndex))))
                 {
                     BaseVoiceoverComponent existingVoiceoverComponent = self.GetComponent<BaseVoiceoverComponent>();
                     if (!existingVoiceoverComponent) self.gameObject.AddComponent<RocketMisakiVoiceoverComponent>();
