@@ -17,7 +17,7 @@ namespace RocketMisakiVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor")]
     [BepInDependency("com.KrononConspirator.RocketMisaki")]
-    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.0.2")]
+    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.0.3")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
