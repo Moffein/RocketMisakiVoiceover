@@ -21,6 +21,7 @@ namespace RocketMisakiVoiceover
     [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.1.0")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
+        public static ConfigEntry<KeyboardShortcut> buttonDust, buttonHurt, buttonTitle, buttonIntro, buttonThanks, buttonMuda, buttonNani, buttonCafe1, buttonCafe4;
         public static ConfigEntry<bool> enableVoicelines;
         public static bool playedSeasonalVoiceline = false;
         public static AssetBundle assetBundle;
@@ -41,6 +42,17 @@ namespace RocketMisakiVoiceover
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the RocketMisaki Skin."));
             enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
+
+            buttonTitle = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Blue Archive"), KeyboardShortcut.Empty);
+            buttonIntro = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Introduction"), KeyboardShortcut.Empty);
+            buttonDust = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Dust to Dust"), KeyboardShortcut.Empty);
+            buttonCafe1 = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Noisy"), KeyboardShortcut.Empty);
+            buttonCafe4 = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Not Interested"), KeyboardShortcut.Empty);
+            buttonThanks = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Thanks"), KeyboardShortcut.Empty);
+            buttonMuda = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Muda"), KeyboardShortcut.Empty);
+            buttonNani = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Nani"), KeyboardShortcut.Empty);
+            buttonHurt = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Hurt"), KeyboardShortcut.Empty);
+
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
                 RiskOfOptionsCompat();
@@ -62,6 +74,14 @@ namespace RocketMisakiVoiceover
         {
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.CheckBoxOption(enableVoicelines));
             RiskOfOptions.ModSettingsManager.SetModIcon(assetBundle.LoadAsset<Sprite>("Misaki"));
+
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonTitle));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonIntro));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonDust));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonThanks));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMuda));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonNani));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonHurt));
         }
 
         private void OnLoad()
@@ -145,6 +165,14 @@ namespace RocketMisakiVoiceover
             RocketMisakiVoiceoverComponent.nseEx = RegisterNSE("Play_RocketMisaki_ExSkill");
             RocketMisakiVoiceoverComponent.nseExLevel = RegisterNSE("Play_RocketMisaki_ExSkill_Level");
             RocketMisakiVoiceoverComponent.nseShout = RegisterNSE("Play_RocketMisaki_Shout");
+            RocketMisakiVoiceoverComponent.nseDust = RegisterNSE("Play_RocketMisaki_ExSkill_Level_1");
+            RocketMisakiVoiceoverComponent.nseHurt = RegisterNSE("Play_RocketMisaki_TakeDamage");
+            RocketMisakiVoiceoverComponent.nseTitle = RegisterNSE("Play_RocketMisaki_TitleDrop");
+            RocketMisakiVoiceoverComponent.nseIntro = RegisterNSE("Play_RocketMisaki_Intro");
+            RocketMisakiVoiceoverComponent.nseThanks = RegisterNSE("Play_RocketMisaki_Thanks");
+            RocketMisakiVoiceoverComponent.nseNani = RegisterNSE("Play_RocketMisaki_nani");
+            RocketMisakiVoiceoverComponent.nseCafe1 = RegisterNSE("Play_RocketMisaki_Cafe1");
+            RocketMisakiVoiceoverComponent.nseCafe4 = RegisterNSE("Play_RocketMisaki_Cafe4");
         }
 
         public void RefreshNSE()

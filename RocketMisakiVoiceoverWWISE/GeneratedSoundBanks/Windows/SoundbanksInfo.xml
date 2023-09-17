@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Node\RoR2 Mods\RocketMisakiVoiceover\RocketMisakiVoiceoverWWISE\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Node\RoR2 Mods\RocketMisakiVoiceover\RocketMisakiVoiceoverWWISE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Node\RoR2 Mods\RocketMisakiVoiceover\RocketMisakiVoiceoverWWISE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Node\RoR2 Mods\RocketMisakiVoiceover\RocketMisakiVoiceoverWWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="263542888">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1640310830" Language="SFX" Hash="3098582418">
+			<ObjectPath>\SoundBanks\Default Work Unit\RocketMisakiSoundbank</ObjectPath>
+			<ShortName>RocketMisakiSoundbank</ShortName>
+			<Path>RocketMisakiSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1833125117" Name="Play_RocketMisaki_AcquireScepter" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_AcquireScepter">
+					<IncludedMemoryFiles>
+						<File Id="441887949" Language="SFX">
+							<ShortName>Misaki_ExWeapon_Get.wav</ShortName>
+							<Path>SFX\Misaki_ExWeapon_Get_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="821160361" Name="Play_RocketMisaki_Blocked" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Blocked">
+					<IncludedMemoryFiles>
+						<File Id="117168043" Language="SFX">
+							<ShortName>Misaki_Battle_Defense_1.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Defense_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="100316241" Name="Play_RocketMisaki_Cafe1" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Cafe1">
+					<IncludedMemoryFiles>
+						<File Id="911009985" Language="SFX">
+							<ShortName>Misaki_Cafe_monolog_1.wav</ShortName>
+							<Path>SFX\Misaki_Cafe_monolog_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="100316244" Name="Play_RocketMisaki_Cafe4" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Cafe4">
+					<IncludedMemoryFiles>
+						<File Id="314889358" Language="SFX">
+							<ShortName>Misaki_Cafe_monolog_4.wav</ShortName>
+							<Path>SFX\Misaki_Cafe_monolog_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2571628139" Name="Play_RocketMisaki_CommonSkill" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_CommonSkill">
+					<IncludedMemoryFiles>
+						<File Id="1069272485" Language="SFX">
+							<ShortName>Misaki_CommonSkill.wav</ShortName>
+							<Path>SFX\Misaki_CommonSkill_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2063295570" Name="Play_RocketMisaki_Defeat" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Defeat">
+					<IncludedMemoryFiles>
+						<File Id="6641425" Language="SFX">
+							<ShortName>Misaki_Battle_Retire.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Retire_10C4C929.wem</Path>
+						</File>
+						<File Id="797855988" Language="SFX">
+							<ShortName>Misaki_Tactic_Defeat_2.wav</ShortName>
+							<Path>SFX\Misaki_Tactic_Defeat_2_10C4C929.wem</Path>
+						</File>
+						<File Id="839667410" Language="SFX">
+							<ShortName>Misaki_Tactic_Defeat_1.wav</ShortName>
+							<Path>SFX\Misaki_Tactic_Defeat_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1321316863" Name="Play_RocketMisaki_ExSkill" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_ExSkill">
+					<IncludedMemoryFiles>
+						<File Id="46781252" Language="SFX">
+							<ShortName>Misaki_ExSkill_3.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_3_10C4C929.wem</Path>
+						</File>
+						<File Id="231428837" Language="SFX">
+							<ShortName>Misaki_ExSkill_1.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_1_10C4C929.wem</Path>
+						</File>
+						<File Id="262549382" Language="SFX">
+							<ShortName>Misaki_ExSkill_2.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2557548460" Name="Play_RocketMisaki_ExSkill_Level" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_ExSkill_Level">
+					<IncludedMemoryFiles>
+						<File Id="439837545" Language="SFX">
+							<ShortName>Misaki_ExSkill_Level_3.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_Level_3_10C4C929.wem</Path>
+						</File>
+						<File Id="673001085" Language="SFX">
+							<ShortName>Misaki_ExSkill_Level_1.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+						<File Id="804476098" Language="SFX">
+							<ShortName>Misaki_ExSkill_Level_2.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_Level_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4194463024" Name="Play_RocketMisaki_ExSkill_Level_1" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_ExSkill_Level_1">
+					<IncludedMemoryFiles>
+						<File Id="673001085" Language="SFX">
+							<ShortName>Misaki_ExSkill_Level_1.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3015454227" Name="Play_RocketMisaki_Intro" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Intro">
+					<IncludedMemoryFiles>
+						<File Id="4575992" Language="SFX">
+							<ShortName>Misaki_Gachaget.wav</ShortName>
+							<Path>SFX\Misaki_Gachaget_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2852201664" Name="Play_RocketMisaki_LevelUp" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_LevelUp">
+					<IncludedMemoryFiles>
+						<File Id="294194139" Language="SFX">
+							<ShortName>Misaki_Growup_3.wav</ShortName>
+							<Path>SFX\Misaki_Growup_3_10C4C929.wem</Path>
+						</File>
+						<File Id="428453851" Language="SFX">
+							<ShortName>Misaki_Growup_2.wav</ShortName>
+							<Path>SFX\Misaki_Growup_2_10C4C929.wem</Path>
+						</File>
+						<File Id="884073961" Language="SFX">
+							<ShortName>Misaki_Growup_1.wav</ShortName>
+							<Path>SFX\Misaki_Growup_1_10C4C929.wem</Path>
+						</File>
+						<File Id="896665982" Language="SFX">
+							<ShortName>Misaki_Growup_4.wav</ShortName>
+							<Path>SFX\Misaki_Growup_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3694839689" Name="Play_RocketMisaki_Lobby" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Lobby">
+					<IncludedMemoryFiles>
+						<File Id="204475013" Language="SFX">
+							<ShortName>Misaki_Lobby_5.wav</ShortName>
+							<Path>SFX\Misaki_Lobby_5_10C4C929.wem</Path>
+						</File>
+						<File Id="412902167" Language="SFX">
+							<ShortName>Misaki_Lobby_2.wav</ShortName>
+							<Path>SFX\Misaki_Lobby_2_10C4C929.wem</Path>
+						</File>
+						<File Id="610750307" Language="SFX">
+							<ShortName>Misaki_Lobby_1.wav</ShortName>
+							<Path>SFX\Misaki_Lobby_1_10C4C929.wem</Path>
+						</File>
+						<File Id="617465708" Language="SFX">
+							<ShortName>Misaki_LogIn_1.wav</ShortName>
+							<Path>SFX\Misaki_LogIn_1_10C4C929.wem</Path>
+						</File>
+						<File Id="652505113" Language="SFX">
+							<ShortName>Misaki_LogIn_2.wav</ShortName>
+							<Path>SFX\Misaki_LogIn_2_10C4C929.wem</Path>
+						</File>
+						<File Id="749015685" Language="SFX">
+							<ShortName>Misaki_Lobby_3.wav</ShortName>
+							<Path>SFX\Misaki_Lobby_3_10C4C929.wem</Path>
+						</File>
+						<File Id="886103814" Language="SFX">
+							<ShortName>Misaki_Lobby_4.wav</ShortName>
+							<Path>SFX\Misaki_Lobby_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3626356824" Name="Play_RocketMisaki_Lobby_bday" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Lobby_bday">
+					<IncludedMemoryFiles>
+						<File Id="56329485" Language="SFX">
+							<ShortName>Misaki_Season_Birthday_1_2.wav</ShortName>
+							<Path>SFX\Misaki_Season_Birthday_1_2_10C4C929.wem</Path>
+						</File>
+						<File Id="165899045" Language="SFX">
+							<ShortName>Misaki_Season_Birthday_1_1.wav</ShortName>
+							<Path>SFX\Misaki_Season_Birthday_1_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3404967929" Name="Play_RocketMisaki_Lobby_Halloween" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Lobby_Halloween">
+					<IncludedMemoryFiles>
+						<File Id="63442197" Language="SFX">
+							<ShortName>Misaki_Season_Halloween_1_2.wav</ShortName>
+							<Path>SFX\Misaki_Season_Halloween_1_2_10C4C929.wem</Path>
+						</File>
+						<File Id="782974502" Language="SFX">
+							<ShortName>Misaki_Season_Halloween_1_1.wav</ShortName>
+							<Path>SFX\Misaki_Season_Halloween_1_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1028691165" Name="Play_RocketMisaki_Lobby_Newyear" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Lobby_Newyear">
+					<IncludedMemoryFiles>
+						<File Id="439370431" Language="SFX">
+							<ShortName>Misaki_Season_NewYear.wav</ShortName>
+							<Path>SFX\Misaki_Season_NewYear_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3086209157" Name="Play_RocketMisaki_Lobby_xmas" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Lobby_xmas">
+					<IncludedMemoryFiles>
+						<File Id="441226228" Language="SFX">
+							<ShortName>Misaki_Season_Xmas.wav</ShortName>
+							<Path>SFX\Misaki_Season_Xmas_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2967097321" Name="Play_RocketMisaki_LowHealth" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_LowHealth">
+					<IncludedMemoryFiles>
+						<File Id="951284747" Language="SFX">
+							<ShortName>Misaki_Battle_BuffSelf_1.wav</ShortName>
+							<Path>SFX\Misaki_Battle_BuffSelf_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1895944111" Name="Play_RocketMisaki_Memorial4" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Memorial4">
+					<IncludedMemoryFiles>
+						<File Id="34908537" Language="SFX">
+							<ShortName>Misaki_MemorialLobby_4_1.wav</ShortName>
+							<Path>SFX\Misaki_MemorialLobby_4_1_10C4C929.wem</Path>
+						</File>
+						<File Id="341968852" Language="SFX">
+							<ShortName>Misaki_MemorialLobby_4_2.wav</ShortName>
+							<Path>SFX\Misaki_MemorialLobby_4_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2013790923" Name="Play_RocketMisaki_nani" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_nani">
+					<IncludedMemoryFiles>
+						<File Id="507175279" Language="SFX">
+							<ShortName>Misaki_Formation_Select.wav</ShortName>
+							<Path>SFX\Misaki_Formation_Select_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2408454209" Name="Play_RocketMisaki_Relationship" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Relationship">
+					<IncludedMemoryFiles>
+						<File Id="932569036" Language="SFX">
+							<ShortName>Misaki_Relationship_Up_4.wav</ShortName>
+							<Path>SFX\Misaki_Relationship_Up_4_10C4C929.wem</Path>
+						</File>
+						<File Id="1065712661" Language="SFX">
+							<ShortName>Misaki_Relationship_Up_1.wav</ShortName>
+							<Path>SFX\Misaki_Relationship_Up_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="429819562" Name="Play_RocketMisaki_Relationship_Short" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Relationship_Short">
+					<IncludedMemoryFiles>
+						<File Id="298566335" Language="SFX">
+							<ShortName>Misaki_Relationship_Up_2.wav</ShortName>
+							<Path>SFX\Misaki_Relationship_Up_2_10C4C929.wem</Path>
+						</File>
+						<File Id="767526672" Language="SFX">
+							<ShortName>Misaki_Relationship_Up_3.wav</ShortName>
+							<Path>SFX\Misaki_Relationship_Up_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="101470030" Name="Play_RocketMisaki_Shout" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Shout">
+					<IncludedMemoryFiles>
+						<File Id="201905324" Language="SFX">
+							<ShortName>Misaki_Battle_Shout_1.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Shout_1_10C4C929.wem</Path>
+						</File>
+						<File Id="361301435" Language="SFX">
+							<ShortName>Misaki_Battle_Shout_2.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Shout_2_10C4C929.wem</Path>
+						</File>
+						<File Id="560930802" Language="SFX">
+							<ShortName>Misaki_Battle_Shout_3.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Shout_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="946595632" Name="Play_RocketMisaki_Spawn" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Spawn">
+					<IncludedMemoryFiles>
+						<File Id="2904790" Language="SFX">
+							<ShortName>Misaki_Formation_In_2.wav</ShortName>
+							<Path>SFX\Misaki_Formation_In_2_10C4C929.wem</Path>
+						</File>
+						<File Id="64033119" Language="SFX">
+							<ShortName>Misaki_Battle_In_1.wav</ShortName>
+							<Path>SFX\Misaki_Battle_In_1_10C4C929.wem</Path>
+						</File>
+						<File Id="316727598" Language="SFX">
+							<ShortName>Misaki_Battle_In_2.wav</ShortName>
+							<Path>SFX\Misaki_Battle_In_2_10C4C929.wem</Path>
+						</File>
+						<File Id="440115283" Language="SFX">
+							<ShortName>Misaki_Formation_In_1.wav</ShortName>
+							<Path>SFX\Misaki_Formation_In_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1483736489" Name="Play_RocketMisaki_TakeDamage" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_TakeDamage">
+					<IncludedMemoryFiles>
+						<File Id="382962374" Language="SFX">
+							<ShortName>Misaki_Battle_Damage_2.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Damage_2_10C4C929.wem</Path>
+						</File>
+						<File Id="435078608" Language="SFX">
+							<ShortName>Misaki_Battle_Damage_3.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Damage_3_10C4C929.wem</Path>
+						</File>
+						<File Id="573380165" Language="SFX">
+							<ShortName>Misaki_Battle_Damage_1.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Damage_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1887651489" Name="Play_RocketMisaki_TeleporterStart" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_TeleporterStart">
+					<IncludedMemoryFiles>
+						<File Id="262549382" Language="SFX">
+							<ShortName>Misaki_ExSkill_2.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_2_10C4C929.wem</Path>
+						</File>
+						<File Id="528807418" Language="SFX">
+							<ShortName>Misaki_Tactic_In_2.wav</ShortName>
+							<Path>SFX\Misaki_Tactic_In_2_10C4C929.wem</Path>
+						</File>
+						<File Id="673001085" Language="SFX">
+							<ShortName>Misaki_ExSkill_Level_1.wav</ShortName>
+							<Path>SFX\Misaki_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+						<File Id="741633421" Language="SFX">
+							<ShortName>Misaki_Tactic_In_1.wav</ShortName>
+							<Path>SFX\Misaki_Tactic_In_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3557647848" Name="Play_RocketMisaki_Thanks" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Thanks">
+					<IncludedMemoryFiles>
+						<File Id="298566335" Language="SFX">
+							<ShortName>Misaki_Relationship_Up_2.wav</ShortName>
+							<Path>SFX\Misaki_Relationship_Up_2_10C4C929.wem</Path>
+						</File>
+						<File Id="896665982" Language="SFX">
+							<ShortName>Misaki_Growup_4.wav</ShortName>
+							<Path>SFX\Misaki_Growup_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2063796968" Name="Play_RocketMisaki_TitleDrop" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_TitleDrop">
+					<IncludedMemoryFiles>
+						<File Id="386089545" Language="SFX">
+							<ShortName>Misaki_Title.wav</ShortName>
+							<Path>SFX\Misaki_Title_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3663554239" Name="Play_RocketMisaki_Victory" ObjectPath="\Events\Default Work Unit\Play_RocketMisaki_Victory">
+					<IncludedMemoryFiles>
+						<File Id="7344406" Language="SFX">
+							<ShortName>Misaki_Battle_Victory_1.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Victory_1_10C4C929.wem</Path>
+						</File>
+						<File Id="22113176" Language="SFX">
+							<ShortName>Misaki_Battle_Victory_2.wav</ShortName>
+							<Path>SFX\Misaki_Battle_Victory_2_10C4C929.wem</Path>
+						</File>
+						<File Id="361735318" Language="SFX">
+							<ShortName>Misaki_Tactic_Victory_1.wav</ShortName>
+							<Path>SFX\Misaki_Tactic_Victory_1_10C4C929.wem</Path>
+						</File>
+						<File Id="952493459" Language="SFX">
+							<ShortName>Misaki_Tactic_Victory_2.wav</ShortName>
+							<Path>SFX\Misaki_Tactic_Victory_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="Volume_SFX" ObjectPath="\Game Parameters\Default Work Unit\Volume_SFX"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

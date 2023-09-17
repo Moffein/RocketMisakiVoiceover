@@ -8,13 +8,14 @@ namespace RocketMisakiVoiceover.Components
 {
     public class RocketMisakiVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static NetworkSoundEventDef nseBlock, nseEx, nseExLevel, nseShout;
+        public static NetworkSoundEventDef nseBlock, nseEx, nseExLevel, nseShout, nseDust, nseHurt, nseTitle, nseIntro, nseThanks, nseNani, nseCafe4, nseCafe1;
 
         private float levelCooldown = 0f;
         private float blockedCooldown = 0f;
         private float lowHealthCooldown = 0f;
         private float secondaryCooldown = 0f;
         private float specialCooldown = 0f;
+        private float bearCooldown = 0f;
         private bool acquiredScepter = false;
 
         protected override void Start()
@@ -31,6 +32,7 @@ namespace RocketMisakiVoiceover.Components
             if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
             if (blockedCooldown > 0f) blockedCooldown -= Time.fixedDeltaTime;
             if (lowHealthCooldown > 0f) lowHealthCooldown -= Time.fixedDeltaTime;
+            if (bearCooldown > 0f) bearCooldown -= Time.fixedDeltaTime;
         }
 
         public override void PlayDamageBlockedServer()
@@ -123,6 +125,10 @@ namespace RocketMisakiVoiceover.Components
                 {
                     PlayBadItem();
                 }
+                else if (id == RoR2Content.Items.Bear)
+                {
+                    PlayBear();
+                }
                 else if (id && id.deprecatedTier == ItemTier.Tier3)
                 {
                     PlayAcquireLegendary();
@@ -156,6 +162,62 @@ namespace RocketMisakiVoiceover.Components
             else
             {
                 TryPlaySound("Play_RocketMisaki_Relationship", 7f, false);
+            }
+        }
+
+        public void PlayBear()
+        {
+            if (bearCooldown > 0f) return;
+            bool played;
+            if (Util.CheckRoll(50f))
+            {
+                played = TryPlaySound("Play_RocketMisaki_Relationship_Short", 3f, false);
+            }
+            else
+            {
+                played = TryPlaySound("Play_RocketMisaki_Relationship", 7f, false);
+            }
+
+            if (played) bearCooldown = 60f;
+        }
+
+        protected override void CheckInputs()
+        {
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonTitle))
+            {
+                TryPlayNetworkSound(nseTitle, 1.1f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonHurt))
+            {
+                TryPlayNetworkSound(nseHurt, 0.1f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonDust))
+            {
+                TryPlayNetworkSound(nseDust, 1.8f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonIntro))
+            {
+                TryPlayNetworkSound(nseIntro, 12.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonThanks))
+            {
+                TryPlayNetworkSound(nseThanks, 2.1f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonMuda))
+            {
+                TryPlayNetworkSound(nseBlock, 0.75f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonNani))
+            {
+                TryPlayNetworkSound(nseNani, 0.4f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonCafe1))
+            {
+                TryPlayNetworkSound(nseCafe1, 1.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonCafe4))
+            {
+                TryPlayNetworkSound(nseCafe4, 1.35f, false);
             }
         }
     }

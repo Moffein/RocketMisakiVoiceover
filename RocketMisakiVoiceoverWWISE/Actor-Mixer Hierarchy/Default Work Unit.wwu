@@ -1,0 +1,2184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Master Mixer" ID="{38F4986D-3070-49DA-BFEC-EA51B5F8683B}" ShortID="482423327">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{6415F72E-D2FB-42F3-981A-C92D11622A1E}" ShortID="815704994">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Volume_SFX" ID="{7532A799-3737-427D-9628-186D4D397B81}" WorkUnitID="{782FBAAC-8259-4539-8A8E-7EB6B6380EFA}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{1927073D-D084-4CDD-9E71-985E614BDFCA}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="SFX Mixer" ID="{03313FEB-BF5E-4353-B040-EB86E8AD075E}" ShortID="977955376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Voiceover" ID="{99727F56-60CF-4D95-868A-BB1909D8E898}" ShortID="152800630">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Misaki_Battle_Buffed_1" ID="{B8E33D72-872A-4E68-8F0F-15AB8081A25E}" ShortID="439572914">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_Buffed_1" ID="{BA812601-FE16-409A-A2C2-2F60309D84A7}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_Buffed_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="726618072"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_Buffed_1" ID="{BA812601-FE16-409A-A2C2-2F60309D84A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Battle_BuffSelf_1" ID="{8AF1BD2D-CE3A-4E3F-8C1F-FE1C778D9053}" ShortID="193642659">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_BuffSelf_1" ID="{84BEF087-FEA0-46D6-8800-7461DE5F35B6}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_BuffSelf_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="951284747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_BuffSelf_1" ID="{84BEF087-FEA0-46D6-8800-7461DE5F35B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Battle_Covered_1" ID="{CCB20314-2DEE-4197-9CF6-CD896D7C3FB3}" ShortID="443754730">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_Covered_1" ID="{07DFB2DB-C847-4CE9-90F6-4266509BF333}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_Covered_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="339877357"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_Covered_1" ID="{07DFB2DB-C847-4CE9-90F6-4266509BF333}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Battle_Defense_1" ID="{C5EAF394-DB19-4229-9312-2AA8BF3B52B8}" ShortID="717160989">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_Defense_1" ID="{7D6C1B81-8CBE-4DBA-9CF9-834CE75DA535}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_Defense_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="117168043"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_Defense_1" ID="{7D6C1B81-8CBE-4DBA-9CF9-834CE75DA535}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Battle_Move_1" ID="{6A186DA0-711D-4DAD-A7C9-37F047B43EE7}" ShortID="698540057">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_Move_1" ID="{E7A6908F-087E-4661-ADE9-A52C603127AB}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_Move_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="408698383"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_Move_1" ID="{E7A6908F-087E-4661-ADE9-A52C603127AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Battle_Move_2" ID="{600674C8-0B04-4A2D-874F-58C3343330DF}" ShortID="515411892">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_Move_2" ID="{5C59A930-4BA3-4510-986B-56B6412275CE}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_Move_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="794479582"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_Move_2" ID="{5C59A930-4BA3-4510-986B-56B6412275CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Battle_Recovery_1" ID="{8D5A9501-D1AD-46C2-8E6B-AA660335A1AD}" ShortID="766776628">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_Recovery_1" ID="{03588195-4B96-4E4C-86A9-F97AE18605CC}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_Recovery_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="733990953"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_Recovery_1" ID="{03588195-4B96-4E4C-86A9-F97AE18605CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Battle_TacticalAction_1" ID="{8E5CB871-173C-4DEB-8CAE-6AFFC4C8A65B}" ShortID="325681762">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Battle_TacticalAction_1" ID="{81EA2474-365C-4BDA-8BF4-0FD6767B60E7}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Battle_TacticalAction_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="630553550"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Battle_TacticalAction_1" ID="{81EA2474-365C-4BDA-8BF4-0FD6767B60E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Cafe_monolog_1" ID="{B82E443F-9384-48C0-ABF6-B6C29C35A0E8}" ShortID="939796710">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Cafe_monolog_1" ID="{25DF9C29-8DDD-4738-9E6B-35813AB23818}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Cafe_monolog_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="911009985"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Cafe_monolog_1" ID="{25DF9C29-8DDD-4738-9E6B-35813AB23818}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Cafe_monolog_2" ID="{A8F40561-8533-4A33-95C2-EF702AC9C8C9}" ShortID="914443491">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Cafe_monolog_2" ID="{C30851B6-76F5-424B-9B81-83AB023CC911}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Cafe_monolog_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="848931746"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Cafe_monolog_2" ID="{C30851B6-76F5-424B-9B81-83AB023CC911}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Cafe_monolog_3" ID="{D37DF0CB-B054-4D1B-A7D1-448C61AB0144}" ShortID="496389267">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Cafe_monolog_3" ID="{6D6148A5-2D21-40D2-A6F0-87F4C748FC8D}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Cafe_monolog_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="316643363"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Cafe_monolog_3" ID="{6D6148A5-2D21-40D2-A6F0-87F4C748FC8D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Cafe_monolog_4" ID="{C000BB64-3FE2-4A2D-A7E3-404640DDE33B}" ShortID="627089314">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Cafe_monolog_4" ID="{E8DF00FE-DEA3-4FB2-8017-96517960590B}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Cafe_monolog_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="314889358"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Cafe_monolog_4" ID="{E8DF00FE-DEA3-4FB2-8017-96517960590B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Cafe_monolog_5" ID="{6F3333CC-D22B-4732-B0B0-DFB1DB24D37D}" ShortID="277817183">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Cafe_monolog_5" ID="{6115F6E8-E9B0-465A-BA4F-40D5400B11B3}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Cafe_monolog_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="699455169"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Cafe_monolog_5" ID="{6115F6E8-E9B0-465A-BA4F-40D5400B11B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_CommonSkill" ID="{51CC45DF-DF30-498A-A465-DD4C9F460669}" ShortID="170362841">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_CommonSkill" ID="{39D427ED-D821-4A2A-B59C-B0ADDCFCD67B}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_CommonSkill.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1069272485"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_CommonSkill" ID="{39D427ED-D821-4A2A-B59C-B0ADDCFCD67B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_ExWeapon_Get" ID="{36B58A8B-1BB8-4B9D-B078-B51F4EBD2079}" ShortID="264253120">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_ExWeapon_Get" ID="{9D8F4972-C5EE-421D-8418-EC251AFBF751}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_ExWeapon_Get.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="441887949"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_ExWeapon_Get" ID="{9D8F4972-C5EE-421D-8418-EC251AFBF751}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Formation_Select" ID="{3EB691E2-4D0E-4FB6-9997-D69C13747D17}" ShortID="317363566">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Formation_Select" ID="{E07593C3-1D83-4AFC-A4D8-9ECEA04449B5}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Formation_Select.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="507175279"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Formation_Select" ID="{E07593C3-1D83-4AFC-A4D8-9ECEA04449B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Gachaget" ID="{7D536DB0-E84A-4F07-997F-DAC1DCD53F07}" ShortID="530125154">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Gachaget" ID="{C6FB8541-86EA-4948-8AC9-C6B034216674}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Gachaget.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="4575992"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Gachaget" ID="{C6FB8541-86EA-4948-8AC9-C6B034216674}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Season_Birthday_Player" ID="{CE5B16C7-3671-4C62-B6D3-2775BEB129C8}" ShortID="651228364">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Season_Birthday_Player" ID="{6CBACD13-D689-4664-BD75-6D82C3732FD7}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Season_Birthday_Player.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1049656903"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Season_Birthday_Player" ID="{6CBACD13-D689-4664-BD75-6D82C3732FD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Season_NewYear" ID="{6EE2ABA0-AD91-44D1-ACE4-BA18533F84CE}" ShortID="278025749">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Season_NewYear" ID="{4F196363-CFD3-4317-A5AB-D302AEC2B360}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Season_NewYear.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="439370431"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Season_NewYear" ID="{4F196363-CFD3-4317-A5AB-D302AEC2B360}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Season_Xmas" ID="{60D70023-FCC2-4599-82C5-F87A967A856B}" ShortID="774101275">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Season_Xmas" ID="{A75AB202-695A-4DEC-AF91-70AE61CEABB2}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Season_Xmas.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="441226228"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Season_Xmas" ID="{A75AB202-695A-4DEC-AF91-70AE61CEABB2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Misaki_Title" ID="{790753EC-1FA7-4C06-9789-F7C39E07E558}" ShortID="381437293">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Misaki_Title" ID="{DE3E4391-D721-4F58-9B34-B602F23948C1}">
+													<Language>SFX</Language>
+													<AudioFile>Misaki_Title.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="386089545"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Misaki_Title" ID="{DE3E4391-D721-4F58-9B34-B602F23948C1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="LevelUp" ID="{1F7BA4C8-9C32-480A-A043-75DCD798B2CA}" ShortID="600361364">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Growup_2" ID="{D934DEAB-C09A-4543-8421-D268F3E99A80}" ShortID="398751049">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Growup_2" ID="{09AA7B34-BEFA-406D-B3F2-D860CE590144}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Growup_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="428453851"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Growup_2" ID="{09AA7B34-BEFA-406D-B3F2-D860CE590144}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Growup_4" ID="{7D515B5B-BFE1-45E7-9BBF-99FCA7AE5DF9}" ShortID="32674149">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Growup_4" ID="{1271E9F4-C376-4006-BF0E-7A84918CA086}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Growup_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="896665982"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Growup_4" ID="{1271E9F4-C376-4006-BF0E-7A84918CA086}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Growup_3" ID="{DE251271-56F1-4E18-8F89-1C4E575AB61B}" ShortID="388710574">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Growup_3" ID="{301FB1C6-AF8F-4824-9025-432054F500EE}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Growup_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="294194139"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Growup_3" ID="{301FB1C6-AF8F-4824-9025-432054F500EE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Growup_1" ID="{69FF5DC3-BB7F-4058-BB5C-E91E3A12F638}" ShortID="572924860">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Growup_1" ID="{207C3D3A-D9F1-48F3-B2B0-59A2012EF6A6}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Growup_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="884073961"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Growup_1" ID="{207C3D3A-D9F1-48F3-B2B0-59A2012EF6A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Relationship" ID="{3D08FA32-709E-4B8D-A8FF-58A119A7D6F0}" ShortID="604323065">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Relationship_Up_1" ID="{02B8DDA6-661B-4664-9B74-78E79D96594B}" ShortID="736488822">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Relationship_Up_1" ID="{1BA247A3-1C45-474B-B006-554856BAD2DE}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Relationship_Up_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1065712661"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Relationship_Up_1" ID="{1BA247A3-1C45-474B-B006-554856BAD2DE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Relationship_Up_4" ID="{4D714A30-B746-4C82-981A-45150B4D8C9B}" ShortID="570183319">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Relationship_Up_4" ID="{EBDA7475-16F0-4620-A35E-4B72CE1A6195}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Relationship_Up_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="932569036"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Relationship_Up_4" ID="{EBDA7475-16F0-4620-A35E-4B72CE1A6195}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Hurt" ID="{9012E6B1-E5BE-49EF-825A-8D6CE7D9EF40}" ShortID="660599564">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Battle_Damage_2" ID="{15932F1C-1158-40DF-BBC1-220DA081A79C}" ShortID="255132073">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Damage_2" ID="{D8D49A92-05E2-43FE-A452-9C3081A4119C}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Damage_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="382962374"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Damage_2" ID="{D8D49A92-05E2-43FE-A452-9C3081A4119C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Battle_Damage_3" ID="{8CD57767-53D0-4838-B16E-D73AFD9C4380}" ShortID="739961251">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Damage_3" ID="{B6D72AE7-92C1-48C3-9D14-19BD649D424D}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Damage_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="435078608"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Damage_3" ID="{B6D72AE7-92C1-48C3-9D14-19BD649D424D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Battle_Damage_1" ID="{15EFFD96-E4A4-4741-897C-D743343153DC}" ShortID="150154297">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Damage_1" ID="{620C7884-2EEE-49F7-876A-3EE382706848}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Damage_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="573380165"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Damage_1" ID="{620C7884-2EEE-49F7-876A-3EE382706848}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Victory" ID="{B59E0F96-504A-478B-BB1F-E8CA8FD88628}" ShortID="747412111">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Battle_Victory_1" ID="{FC777C62-66BB-4E7E-96AE-77062E5CECA9}" ShortID="275666501">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Victory_1" ID="{288428BD-4656-43B7-B558-96F6908346AD}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Victory_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="7344406"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Victory_1" ID="{288428BD-4656-43B7-B558-96F6908346AD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Battle_Victory_2" ID="{0E3C477E-EA42-4372-A18F-528C010C13F0}" ShortID="517033105">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Victory_2" ID="{E5952F75-C573-4FF5-B718-0F201CDCA1A4}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Victory_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="22113176"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Victory_2" ID="{E5952F75-C573-4FF5-B718-0F201CDCA1A4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Tactic_Victory_1" ID="{6D42F64E-2B83-4871-92B3-89443626F71E}" ShortID="876181293">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Tactic_Victory_1" ID="{D8DBAC4B-129C-4F73-A31D-7E31C6F695E6}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Tactic_Victory_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="361735318"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Tactic_Victory_1" ID="{D8DBAC4B-129C-4F73-A31D-7E31C6F695E6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Tactic_Victory_2" ID="{9708C363-D8BB-4F44-8113-15C3222429C1}" ShortID="545054092">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Tactic_Victory_2" ID="{481675AD-2B43-4799-9DF1-1676466D006E}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Tactic_Victory_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="952493459"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Tactic_Victory_2" ID="{481675AD-2B43-4799-9DF1-1676466D006E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Lobby" ID="{8065884A-517D-44A7-A412-F6B5658EF2A8}" ShortID="467561314">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Lobby_3" ID="{A0A46F76-0A7C-4699-958E-744C73DA3280}" ShortID="172611642">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Lobby_3" ID="{423A434C-1B52-4910-90E5-D752F03CE62F}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Lobby_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="749015685"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Lobby_3" ID="{423A434C-1B52-4910-90E5-D752F03CE62F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Lobby_4" ID="{50FF7153-C32F-465D-AB40-E58A1FCD4F45}" ShortID="566378461">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Lobby_4" ID="{8054C829-C5B0-4600-BC01-2DCB8F5678D8}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Lobby_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="886103814"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Lobby_4" ID="{8054C829-C5B0-4600-BC01-2DCB8F5678D8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Lobby_5" ID="{4386C237-E299-4D24-AC47-87DE78099F5E}" ShortID="356916909">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Lobby_5" ID="{A29146F8-C257-459C-8208-A2F00A411E97}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Lobby_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="204475013"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Lobby_5" ID="{A29146F8-C257-459C-8208-A2F00A411E97}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Lobby_1" ID="{E575CBE2-6F73-47BF-9872-B4BADAC3AE98}" ShortID="650169408">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Lobby_1" ID="{EAB81DDD-5716-49BA-ADBC-106806B16BC2}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Lobby_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="610750307"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Lobby_1" ID="{EAB81DDD-5716-49BA-ADBC-106806B16BC2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_LogIn_1" ID="{64E992E3-9ED8-4680-A412-3255BF27EFA6}" ShortID="540821275">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_LogIn_1" ID="{05CA547B-ABEC-4689-BF18-BE7169F94C6C}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_LogIn_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="617465708"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_LogIn_1" ID="{05CA547B-ABEC-4689-BF18-BE7169F94C6C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_LogIn_2" ID="{29D7B4BA-2AA9-45CD-95F1-67F467A03438}" ShortID="446285761">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_LogIn_2" ID="{501F6457-B68C-4056-89B7-EA086D3AA19D}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_LogIn_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="652505113"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_LogIn_2" ID="{501F6457-B68C-4056-89B7-EA086D3AA19D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Lobby_2" ID="{8401100E-E153-4247-AEE0-BA4A72363A94}" ShortID="17918668">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Lobby_2" ID="{1EC14701-C505-44B5-9002-654D5A520B35}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Lobby_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="412902167"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Lobby_2" ID="{1EC14701-C505-44B5-9002-654D5A520B35}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Shout" ID="{8F7E8FF3-DFC3-4AC1-BA44-03099317B2E2}" ShortID="574278643">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Battle_Shout_2" ID="{CDAF7371-487D-4DA3-8FD2-F576A634D71C}" ShortID="939805407">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Shout_2" ID="{B91F2FDA-F87C-47A6-A972-BF0120050924}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Shout_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="361301435"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Shout_2" ID="{B91F2FDA-F87C-47A6-A972-BF0120050924}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Battle_Shout_1" ID="{BD5381FD-239F-4677-B5AB-E27359F5537F}" ShortID="893019561">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Shout_1" ID="{4943B002-A2F9-4F1E-AE7B-3DB848DD612A}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Shout_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="201905324"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Shout_1" ID="{4943B002-A2F9-4F1E-AE7B-3DB848DD612A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Battle_Shout_3" ID="{6D14B3CF-A959-482D-8391-16A5E35C3A44}" ShortID="250322620">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Shout_3" ID="{32ABEC74-500C-4D30-AEDB-E9CEADA036CC}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Shout_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="560930802"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Shout_3" ID="{32ABEC74-500C-4D30-AEDB-E9CEADA036CC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Defeat" ID="{E15EFCF7-1F89-4EC0-BCA1-085A5159EED3}" ShortID="100219741">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Battle_Retire" ID="{F3107CA5-431E-47D5-A48A-E25B4FD13958}" ShortID="727635628">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_Retire" ID="{9FE86F12-D096-43E2-9B85-BBE45BC198E9}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_Retire.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="6641425"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_Retire" ID="{9FE86F12-D096-43E2-9B85-BBE45BC198E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Tactic_Defeat_2" ID="{D8D33EF5-3997-4924-ACE1-9F3A9CDED249}" ShortID="294427070">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Tactic_Defeat_2" ID="{29E0ADF0-036C-4445-91E3-77ED327D644B}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Tactic_Defeat_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="797855988"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Tactic_Defeat_2" ID="{29E0ADF0-036C-4445-91E3-77ED327D644B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Tactic_Defeat_1" ID="{3B2BE93A-3273-4814-AF6A-2CE9EBF7DCDB}" ShortID="737254963">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Tactic_Defeat_1" ID="{2E59EE2C-E2A1-433E-AB30-9EF0E42B6CAB}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Tactic_Defeat_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="839667410"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Tactic_Defeat_1" ID="{2E59EE2C-E2A1-433E-AB30-9EF0E42B6CAB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Lobby_bday" ID="{F7CDF0EE-40A8-4E0A-978D-911C89D68AC9}" ShortID="303623083">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Season_Birthday_1_1" ID="{D52ED4A5-B619-4E4C-8872-04D0B4F5B1E8}" ShortID="163003196">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Season_Birthday_1_1" ID="{67DFC4E5-12B9-4518-AA37-E9EE237EDAFA}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Season_Birthday_1_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="165899045"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Season_Birthday_1_1" ID="{67DFC4E5-12B9-4518-AA37-E9EE237EDAFA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Season_Birthday_1_2" ID="{08EB65C4-0E6E-49F6-89C3-E96B4F3C75E1}" ShortID="679541651">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Season_Birthday_1_2" ID="{0989E6C8-A021-41EE-8FA5-678CA26DDF5B}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Season_Birthday_1_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="56329485"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Season_Birthday_1_2" ID="{0989E6C8-A021-41EE-8FA5-678CA26DDF5B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Misaki_Season_Birthday_1_1" ID="{D52ED4A5-B619-4E4C-8872-04D0B4F5B1E8}"/>
+												<ItemRef Name="Misaki_Season_Birthday_1_2" ID="{08EB65C4-0E6E-49F6-89C3-E96B4F3C75E1}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Lobby_halloween" ID="{058F6D58-B9F3-4AD0-9AEA-6E9729DAE9C1}" ShortID="480720166">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Season_Halloween_1_1" ID="{6AEC8A66-AFB1-4BD2-8955-3C866BBCBC03}" ShortID="750690038">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Season_Halloween_1_1" ID="{C5147E7E-2C5F-434A-AF58-EF12A168B337}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Season_Halloween_1_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="782974502"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Season_Halloween_1_1" ID="{C5147E7E-2C5F-434A-AF58-EF12A168B337}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Season_Halloween_1_2" ID="{5B1983F3-7430-4247-8676-7B14B5C24C4C}" ShortID="909382786">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Season_Halloween_1_2" ID="{1ADDB4EC-4379-498D-85B8-492AD7CFEB55}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Season_Halloween_1_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="63442197"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Season_Halloween_1_2" ID="{1ADDB4EC-4379-498D-85B8-492AD7CFEB55}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Misaki_Season_Halloween_1_1" ID="{6AEC8A66-AFB1-4BD2-8955-3C866BBCBC03}"/>
+												<ItemRef Name="Misaki_Season_Halloween_1_2" ID="{5B1983F3-7430-4247-8676-7B14B5C24C4C}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Spawn" ID="{C9F0EACE-B958-42EB-B86D-981A0895DEC7}" ShortID="510822710">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Battle_In_1" ID="{0844D4AE-E314-420B-8CA7-6C1000F3A55B}" ShortID="221378572">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_In_1" ID="{918E27D8-1EA2-4620-A60B-9142522C9291}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_In_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="64033119"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_In_1" ID="{918E27D8-1EA2-4620-A60B-9142522C9291}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Battle_In_2" ID="{4A365D16-E3AD-41E8-810F-A05F8EF9064A}" ShortID="456324489">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Battle_In_2" ID="{8F4C8EAD-2282-4D5B-825F-7BB5CEB50EA0}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Battle_In_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="316727598"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Battle_In_2" ID="{8F4C8EAD-2282-4D5B-825F-7BB5CEB50EA0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Formation_In_2" ID="{C728D7B1-B06E-42A3-88FA-BF375C1DAC4E}" ShortID="621238528">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Formation_In_2" ID="{C1B50707-DA6B-495D-89B0-E18E3CEAD421}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Formation_In_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="2904790"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Formation_In_2" ID="{C1B50707-DA6B-495D-89B0-E18E3CEAD421}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Formation_In_1" ID="{3F423F5A-C988-4882-BAE5-86D3D70AED3A}" ShortID="865075169">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Formation_In_1" ID="{5331A07A-5CB7-4785-B9A5-47ACC16350C9}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Formation_In_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="440115283"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Formation_In_1" ID="{5331A07A-5CB7-4785-B9A5-47ACC16350C9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Relationship_Short" ID="{4F422E73-9AF8-409F-B0DB-B8447D2E0AEF}" ShortID="514886400">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Relationship_Up_2" ID="{6BB2F46B-C9C7-4AEF-8875-13D7AEC217CB}" ShortID="681233289">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Relationship_Up_2" ID="{98BA8070-AC09-4EBB-A712-C2D39B2F28AA}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Relationship_Up_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="298566335"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Relationship_Up_2" ID="{98BA8070-AC09-4EBB-A712-C2D39B2F28AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Relationship_Up_3" ID="{54D3A195-49FD-441E-89CA-B1D7164EDD7D}" ShortID="268327507">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Relationship_Up_3" ID="{916A3258-28DE-47D3-905B-34ED49485A32}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Relationship_Up_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="767526672"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Relationship_Up_3" ID="{916A3258-28DE-47D3-905B-34ED49485A32}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="ExSkill" ID="{2E2E928B-2368-41D4-90CE-3C9C8776EB1F}" ShortID="1066720608">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_ExSkill_1" ID="{014DB8F8-A03F-4204-BBFC-E744A2D8DDA4}" ShortID="966103460">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_1" ID="{DB7E086F-FE0D-4A52-BA82-6A50EDEDB03A}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="231428837"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_1" ID="{DB7E086F-FE0D-4A52-BA82-6A50EDEDB03A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_ExSkill_3" ID="{DD56074C-9075-4B7F-B6A7-C7E4C00919FE}" ShortID="349726933">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_3" ID="{E36E38A9-D716-4159-A888-5A6BA484115A}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="46781252"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_3" ID="{E36E38A9-D716-4159-A888-5A6BA484115A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_ExSkill_2" ID="{57A74C32-6096-4490-A8BC-4DB926049606}" ShortID="80307615">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_2" ID="{DDACC2C9-E186-4DA5-8A63-4FD60231F8F6}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="262549382"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_2" ID="{DDACC2C9-E186-4DA5-8A63-4FD60231F8F6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="ExSkill_Level" ID="{09B8A54B-F0CA-4323-9164-9E12404407E5}" ShortID="357077682">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_ExSkill_Level_2" ID="{18592A21-B17E-436E-8DCD-548EA73789AE}" ShortID="877861733">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_Level_2" ID="{C836B875-D907-4C30-AA63-BC7402E8BA98}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_Level_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="804476098"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_Level_2" ID="{C836B875-D907-4C30-AA63-BC7402E8BA98}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_ExSkill_Level_1" ID="{E7FF255B-E9AB-489D-9C89-C4A958B72F9E}" ShortID="32555896">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_Level_1" ID="{A222A6FD-7228-482D-8E6C-E587A459E675}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_Level_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="673001085"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_Level_1" ID="{A222A6FD-7228-482D-8E6C-E587A459E675}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_ExSkill_Level_3" ID="{53E8B4BD-09D8-4CE6-9AE5-5FEEEE32C148}" ShortID="4189096">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_Level_3" ID="{22392621-9614-4DC1-A61D-CF648BDACEB9}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_Level_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="439837545"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_Level_3" ID="{22392621-9614-4DC1-A61D-CF648BDACEB9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="TeleporterStart" ID="{7A46EEC3-1EAE-4C47-8887-AFBDE9B55D20}" ShortID="755972536">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_ExSkill_Level_1" ID="{ECB2DC33-3865-471B-92DF-DB6338F56D16}" ShortID="564952020">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_Level_1" ID="{3A0F64B7-F93C-47C6-B116-EF3C17EB7F76}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_Level_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="673001085"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_Level_1" ID="{3A0F64B7-F93C-47C6-B116-EF3C17EB7F76}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_ExSkill_2" ID="{7657FAFC-EC8A-4534-A884-41CE3BA6AC18}" ShortID="137265355">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_ExSkill_2" ID="{21B5C692-222A-45DF-B688-1B5DAE215276}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_ExSkill_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="262549382"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_ExSkill_2" ID="{21B5C692-222A-45DF-B688-1B5DAE215276}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Tactic_In_2" ID="{F840830A-35C6-4D40-B695-35DF4103C8CC}" ShortID="1047386974">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Tactic_In_2" ID="{6D39CB6C-6D50-4B3B-A7E1-DE9B4CD38C0B}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Tactic_In_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="528807418"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Tactic_In_2" ID="{6D39CB6C-6D50-4B3B-A7E1-DE9B4CD38C0B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Tactic_In_1" ID="{0D634C43-6109-4961-83D9-85F392F7CC22}" ShortID="542604280">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Tactic_In_1" ID="{120FE8BC-94DC-4C4F-9AA9-8C1E0354A9FC}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Tactic_In_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="741633421"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Tactic_In_1" ID="{120FE8BC-94DC-4C4F-9AA9-8C1E0354A9FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Memorial4" ID="{D896DAE1-69B3-499C-A386-09F826227E65}" ShortID="120074303">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_MemorialLobby_4_2" ID="{1B239BC1-D869-43D9-9450-7A616DE97CFD}" ShortID="584191460">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_MemorialLobby_4_2" ID="{939D7C03-307D-4C12-BC93-44A8500331ED}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_MemorialLobby_4_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="341968852"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_MemorialLobby_4_2" ID="{939D7C03-307D-4C12-BC93-44A8500331ED}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_MemorialLobby_4_1" ID="{1F352938-CA9E-4FD7-AA31-AD9DDD929628}" ShortID="479707715">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_MemorialLobby_4_1" ID="{CFF0D701-8F5C-4634-9DD2-18BAEE4F93C1}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_MemorialLobby_4_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="34908537"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_MemorialLobby_4_1" ID="{CFF0D701-8F5C-4634-9DD2-18BAEE4F93C1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Misaki_MemorialLobby_4_1" ID="{1F352938-CA9E-4FD7-AA31-AD9DDD929628}"/>
+												<ItemRef Name="Misaki_MemorialLobby_4_2" ID="{1B239BC1-D869-43D9-9450-7A616DE97CFD}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Thanks" ID="{3437D36E-17B2-419E-9CA4-33F1A86CC6DB}" ShortID="893878706">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Misaki_Relationship_Up_2" ID="{DD9A6CCB-6041-4EB6-9444-722716FF25E4}" ShortID="151981852">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>90</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Relationship_Up_2" ID="{725F9740-5A72-4E68-B2F0-5F46CAFDC1CB}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Relationship_Up_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="298566335"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Relationship_Up_2" ID="{725F9740-5A72-4E68-B2F0-5F46CAFDC1CB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Misaki_Growup_4" ID="{50DA7F0E-6740-430B-B1F0-4D6362CF9006}" ShortID="297185518">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{1FC37616-9EFB-4AEC-AE39-6AC5DC5B494C}" WorkUnitID="{4C94FBD1-A828-431D-9F28-C816FDAA3AD2}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C7CF4AD-70DC-4802-A50D-0966C0B9E61E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Misaki_Growup_4" ID="{6C4B896A-9610-489A-99C5-9D4E219B1209}">
+															<Language>SFX</Language>
+															<AudioFile>Misaki_Growup_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="896665982"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Misaki_Growup_4" ID="{6C4B896A-9610-489A-99C5-9D4E219B1209}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
