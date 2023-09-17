@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Blender
+/OriginalSoundFiles
+/BlenderOriginal/MisakiCannon_D.png
+/BlenderOriginal
+/Misaki.zip
