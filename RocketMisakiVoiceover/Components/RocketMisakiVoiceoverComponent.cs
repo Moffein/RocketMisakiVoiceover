@@ -8,9 +8,7 @@ namespace RocketMisakiVoiceover.Components
 {
     public class RocketMisakiVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static NetworkSoundEventDef nseBlock;
-        public static NetworkSoundEventDef nseEx;
-        public static NetworkSoundEventDef nseExLevel;
+        public static NetworkSoundEventDef nseBlock, nseEx, nseExLevel, nseShout;
 
         private float levelCooldown = 0f;
         private float blockedCooldown = 0f;
@@ -73,6 +71,11 @@ namespace RocketMisakiVoiceover.Components
             if (secondaryCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseEx, 1.46f, false);
             if (played) secondaryCooldown = 10f;
+        }
+
+        public override void PlayUtilityAuthority(GenericSkill skill)
+        {
+            TryPlayNetworkSound(nseShout, 0f, false);
         }
 
         public override void PlaySpawn()

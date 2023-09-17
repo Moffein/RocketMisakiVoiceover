@@ -144,6 +144,7 @@ namespace RocketMisakiVoiceover
             RocketMisakiVoiceoverComponent.nseBlock =  RegisterNSE("Play_RocketMisaki_Blocked");
             RocketMisakiVoiceoverComponent.nseEx = RegisterNSE("Play_RocketMisaki_ExSkill");
             RocketMisakiVoiceoverComponent.nseExLevel = RegisterNSE("Play_RocketMisaki_ExSkill_Level");
+            RocketMisakiVoiceoverComponent.nseShout = RegisterNSE("Play_RocketMisaki_Shout");
         }
 
         public void RefreshNSE()
