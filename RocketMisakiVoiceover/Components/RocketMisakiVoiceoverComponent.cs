@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using BaseVoiceoverLib;
 using RoR2;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -7,9 +8,6 @@ namespace RocketMisakiVoiceover.Components
 {
     public class RocketMisakiVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static List<SkinDef> requiredSkinDefs = new List<SkinDef>();
-        public static ItemIndex ScepterIndex;
-
         public static NetworkSoundEventDef nseBlock;
         public static NetworkSoundEventDef nseEx;
         public static NetworkSoundEventDef nseExLevel;
@@ -21,20 +19,10 @@ namespace RocketMisakiVoiceover.Components
         private float specialCooldown = 0f;
         private bool acquiredScepter = false;
 
-        protected override void Awake()
-        {
-            spawnVoicelineDelay = 3f;
-            if (Run.instance && Run.instance.stageClearCount == 0)
-            {
-                spawnVoicelineDelay = 6.5f;
-            }
-            base.Awake();
-        }
-
         protected override void Start()
         {
             base.Start();
-            if (inventory && inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
+            if (inventory && inventory.GetItemCount(scepterIndex) > 0) acquiredScepter = true;
         }
 
         protected override void FixedUpdate()
@@ -67,8 +55,6 @@ namespace RocketMisakiVoiceover.Components
             }
         }
 
-        public override void PlayJump() { }
-
         public override void PlayLevelUp()
         {
             if (levelCooldown > 0f) return;
@@ -82,9 +68,7 @@ namespace RocketMisakiVoiceover.Components
             if (TryPlaySound("Play_RocketMisaki_LowHealth", 1.2f, false)) lowHealthCooldown = 60f;
         }
 
-        public override void PlayPrimaryAuthority() { }
-
-        public override void PlaySecondaryAuthority()
+        public override void PlaySecondaryAuthority(GenericSkill skill)
         {
             if (secondaryCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseEx, 1.46f, false);
@@ -96,7 +80,7 @@ namespace RocketMisakiVoiceover.Components
             TryPlaySound("Play_RocketMisaki_Spawn", 2.4f, true);
         }
 
-        public override void PlaySpecialAuthority()
+        public override void PlaySpecialAuthority(GenericSkill skill)
         {
             if (specialCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseExLevel, 1.85f, false);
@@ -113,8 +97,6 @@ namespace RocketMisakiVoiceover.Components
             TryPlaySound("Play_RocketMisaki_TeleporterStart", 3f, false);
         }
 
-        public override void PlayUtilityAuthority() { }
-
         public override void PlayVictory()
         {
             TryPlaySound("Play_RocketMisaki_Memorial4", 12.5f, true);
@@ -123,7 +105,7 @@ namespace RocketMisakiVoiceover.Components
         protected override void Inventory_onItemAddedClient(ItemIndex itemIndex)
         {
             base.Inventory_onItemAddedClient(itemIndex);
-            if (ScepterIndex != ItemIndex.None && itemIndex == ScepterIndex)
+            if (scepterIndex != ItemIndex.None && itemIndex == scepterIndex)
             {
                 PlayAcquireScepter();
             }
@@ -144,6 +126,7 @@ namespace RocketMisakiVoiceover.Components
                 }
             }
         }
+
         public void PlayAcquireScepter()
         {
             if (acquiredScepter) return;

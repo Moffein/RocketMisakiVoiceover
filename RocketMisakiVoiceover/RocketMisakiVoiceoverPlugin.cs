@@ -11,13 +11,14 @@ using UnityEngine.Networking;
 using RocketMisakiVoiceover.Components;
 using RocketMisakiVoiceover.Modules;
 using System.Collections.Generic;
+using BaseVoiceoverLib;
 
 namespace RocketMisakiVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor")]
     [BepInDependency("com.KrononConspirator.RocketMisaki")]
-    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.0.3")]
+    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.1.0")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -28,7 +29,6 @@ namespace RocketMisakiVoiceover
         public void Awake()
         {
             Files.PluginInfo = this.Info;
-            BaseVoiceoverComponent.Init();
             RoR2.RoR2Application.onLoad += OnLoad;
             new Content().Initialize();
 
@@ -66,129 +66,84 @@ namespace RocketMisakiVoiceover
 
         private void OnLoad()
         {
-            bool foundSkin = false;
             BodyIndex rocketIndex = BodyCatalog.FindBodyIndex("RocketSurvivorBody");
-            SurvivorIndex si = SurvivorCatalog.GetSurvivorIndexFromBodyIndex(rocketIndex);
-            rocketSurvivorDef = SurvivorCatalog.GetSurvivorDef(si);
-            
+
+            SkinDef misakiSkin = null;
             SkinDef[] skins = SkinCatalog.FindSkinsForBody(rocketIndex);
             foreach (SkinDef skinDef in skins)
             {
                 if (skinDef.name == "RocketMisakiSkinDef")
                 {
-                    foundSkin = true;
-                    RocketMisakiVoiceoverComponent.requiredSkinDefs.Add(skinDef);
+                    misakiSkin = skinDef;
                     break;
                 }
             }
 
-            if (!foundSkin)
+            if (!misakiSkin)
             {
                 Debug.LogError("RocketMisakiVoiceover: Rocket Misaki SkinDef not found. Voicelines will not work!");
             }
-            else if (rocketSurvivorDef)
+            else
             {
-                On.RoR2.CharacterBody.Start += AttachVoiceoverComponent;
-                On.RoR2.SurvivorMannequins.SurvivorMannequinSlotController.RebuildMannequinInstance += (orig, self) =>
-                {
-                    orig(self);
-                    if (self.currentSurvivorDef == rocketSurvivorDef)
-                    {
-                        //Loadout isn't loaded first time this is called, so we need to manually get it.
-                        //Probably not the most elegant way to resolve this.
-                        if (self.loadoutDirty)
-                        {
-                            if (self.networkUser)
-                            {
-                                self.networkUser.networkLoadout.CopyLoadout(self.currentLoadout);
-                            }
-                        }
 
-                        //Check SkinDef
-                        BodyIndex bodyIndexFromSurvivorIndex = SurvivorCatalog.GetBodyIndexFromSurvivorIndex(self.currentSurvivorDef.survivorIndex);
-                        int skinIndex = (int)self.currentLoadout.bodyLoadoutManager.GetSkinIndex(bodyIndexFromSurvivorIndex);
-                        SkinDef safe = HG.ArrayUtils.GetSafe<SkinDef>(BodyCatalog.GetBodySkins(bodyIndexFromSurvivorIndex), skinIndex);
-                        if (true && enableVoicelines.Value && RocketMisakiVoiceoverComponent.requiredSkinDefs.Contains(safe))
-                        {
-                            bool played = false;
-                            if (!playedSeasonalVoiceline)
-                            {
-                                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
-                                {
-                                    Util.PlaySound("Play_RocketMisaki_Lobby_Newyear", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 13)
-                                {
-                                    Util.PlaySound("Play_RocketMisaki_Lobby_bday", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 10 && System.DateTime.Today.Day == 31)
-                                {
-                                    Util.PlaySound("Play_RocketMisaki_Lobby_Halloween", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
-                                {
-                                    Util.PlaySound("Play_RocketMisaki_Lobby_xmas", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-
-                                if (played)
-                                {
-                                    playedSeasonalVoiceline = true;
-                                }
-                            }
-                            if (!played)
-                            {
-                                if (Util.CheckRoll(5f))
-                                {
-                                    Util.PlaySound("Play_RocketMisaki_TitleDrop", self.mannequinInstanceTransform.gameObject);
-                                }
-                                else
-                                {
-                                    Util.PlaySound("Play_RocketMisaki_Lobby", self.mannequinInstanceTransform.gameObject);
-                                }
-                            }
-                        }
-                    }
-                };
+                VoiceoverInfo vo = new VoiceoverInfo(typeof(RocketMisakiVoiceoverComponent), misakiSkin, "RocketSurvivorBody");
+                vo.selectActions += MisakiSelect;
             }
-            RocketMisakiVoiceoverComponent.ScepterIndex = ItemCatalog.FindItemIndex("ITEM_ANCIENT_SCEPTER");
 
-            //Add NSE here
-            nseList.Add(new NSEInfo(RocketMisakiVoiceoverComponent.nseBlock));
-            nseList.Add(new NSEInfo(RocketMisakiVoiceoverComponent.nseEx));
-            nseList.Add(new NSEInfo(RocketMisakiVoiceoverComponent.nseExLevel));
             RefreshNSE();
         }
 
-        private void AttachVoiceoverComponent(On.RoR2.CharacterBody.orig_Start orig, CharacterBody self)
+        private void MisakiSelect(GameObject mannequinObject)
         {
-            orig(self);
-            if (self)
+            if (!enableVoicelines.Value) return;
+            bool played = false;
+
+            if (!playedSeasonalVoiceline)
             {
-                if (self.bodyIndex == BodyCatalog.FindBodyIndex("RocketSurvivorBody") && (RocketMisakiVoiceoverComponent.requiredSkinDefs.Contains(SkinCatalog.GetBodySkinDef(self.bodyIndex, (int)self.skinIndex))))
+                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
                 {
-                    BaseVoiceoverComponent existingVoiceoverComponent = self.GetComponent<BaseVoiceoverComponent>();
-                    if (!existingVoiceoverComponent) self.gameObject.AddComponent<RocketMisakiVoiceoverComponent>();
+                    Util.PlaySound("Play_RocketMisaki_Lobby_Newyear", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 13)
+                {
+                    Util.PlaySound("Play_RocketMisaki_Lobby_bday", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 10 && System.DateTime.Today.Day == 31)
+                {
+                    Util.PlaySound("Play_RocketMisaki_Lobby_Halloween", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                {
+                    Util.PlaySound("Play_RocketMisaki_Lobby_xmas", mannequinObject);
+                    played = true;
+                }
+
+                if (played)
+                {
+                    playedSeasonalVoiceline = true;
+                }
+            }
+            if (!played)
+            {
+                if (Util.CheckRoll(5f))
+                {
+                    Util.PlaySound("Play_RocketMisaki_TitleDrop", mannequinObject);
+                }
+                else
+                {
+                    Util.PlaySound("Play_RocketMisaki_Lobby", mannequinObject);
                 }
             }
         }
 
         private void InitNSE()
         {
-            RocketMisakiVoiceoverComponent.nseBlock = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            RocketMisakiVoiceoverComponent.nseBlock.eventName = "Play_RocketMisaki_Blocked";
-            Content.networkSoundEventDefs.Add(RocketMisakiVoiceoverComponent.nseBlock);
-
-            RocketMisakiVoiceoverComponent.nseEx = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            RocketMisakiVoiceoverComponent.nseEx.eventName = "Play_RocketMisaki_ExSkill";
-            Content.networkSoundEventDefs.Add(RocketMisakiVoiceoverComponent.nseEx);
-
-            RocketMisakiVoiceoverComponent.nseExLevel = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            RocketMisakiVoiceoverComponent.nseExLevel.eventName = "Play_RocketMisaki_ExSkill_Level";
-            Content.networkSoundEventDefs.Add(RocketMisakiVoiceoverComponent.nseExLevel);
+            RocketMisakiVoiceoverComponent.nseBlock =  RegisterNSE("Play_RocketMisaki_Blocked");
+            RocketMisakiVoiceoverComponent.nseEx = RegisterNSE("Play_RocketMisaki_ExSkill");
+            RocketMisakiVoiceoverComponent.nseExLevel = RegisterNSE("Play_RocketMisaki_ExSkill_Level");
         }
 
         public void RefreshNSE()
@@ -197,6 +152,15 @@ namespace RocketMisakiVoiceover
             {
                 nse.ValidateParams();
             }
+        }
+
+        private NetworkSoundEventDef RegisterNSE(string eventName)
+        {
+            NetworkSoundEventDef nse = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
+            nse.eventName = eventName;
+            Content.networkSoundEventDefs.Add(nse);
+            nseList.Add(new NSEInfo(nse));
+            return nse;
         }
 
         public static List<NSEInfo> nseList = new List<NSEInfo>();
