@@ -186,38 +186,47 @@ namespace RocketMisakiVoiceover.Components
             if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonTitle))
             {
                 TryPlayNetworkSound(nseTitle, 1.1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonHurt))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonHurt))
             {
                 TryPlayNetworkSound(nseHurt, 0.1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonDust))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonDust))
             {
                 TryPlayNetworkSound(nseDust, 1.8f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonIntro))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonIntro))
             {
                 TryPlayNetworkSound(nseIntro, 12.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonThanks))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonThanks))
             {
                 TryPlayNetworkSound(nseThanks, 2.1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonMuda))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonMuda))
             {
                 TryPlayNetworkSound(nseBlock, 0.75f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonNani))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonNani))
             {
                 TryPlayNetworkSound(nseNani, 0.4f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonCafe1))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonCafe1))
             {
                 TryPlayNetworkSound(nseCafe1, 1.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonCafe4))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RocketMisakiVoiceoverPlugin.buttonCafe4))
             {
                 TryPlayNetworkSound(nseCafe4, 1.35f, false);
+                return;
             }
         }
     }
