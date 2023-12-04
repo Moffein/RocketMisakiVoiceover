@@ -229,5 +229,10 @@ namespace RocketMisakiVoiceover.Components
                 return;
             }
         }
+
+        public override bool ComponentEnableVoicelines()
+        {
+            return RocketMisakiVoiceoverPlugin.enableVoicelines.Value;
+        }
     }
 }

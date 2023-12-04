@@ -19,7 +19,7 @@ namespace RocketMisakiVoiceover
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.KrononConspirator.RocketMisaki", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.1.1")]
+    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.1.2")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonDust, buttonHurt, buttonTitle, buttonIntro, buttonThanks, buttonMuda, buttonNani, buttonCafe1, buttonCafe4;
