@@ -12,6 +12,8 @@ using RocketMisakiVoiceover.Components;
 using RocketMisakiVoiceover.Modules;
 using System.Collections.Generic;
 using BaseVoiceoverLib;
+using System.Linq;
+using Mono.Cecil;
 
 namespace RocketMisakiVoiceover
 {
@@ -19,7 +21,7 @@ namespace RocketMisakiVoiceover
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.KrononConspirator.RocketMisaki", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.1.2")]
+    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.2.0")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonDust, buttonHurt, buttonTitle, buttonIntro, buttonThanks, buttonMuda, buttonNani, buttonCafe1, buttonCafe4;
@@ -106,9 +108,34 @@ namespace RocketMisakiVoiceover
             }
             else
             {
-
                 VoiceoverInfo vo = new VoiceoverInfo(typeof(RocketMisakiVoiceoverComponent), misakiSkin, "RocketSurvivorBody");
                 vo.selectActions += MisakiSelect;
+
+                //Hacky fix for new rocket update
+                GameObject bodyMesh = null;
+                GameObject rocketBodyObject = BodyCatalog.GetBodyPrefab(rocketIndex);
+                ModelLocator ml = rocketBodyObject.GetComponent<ModelLocator>();
+                Renderer[] renderers = ml.modelTransform.gameObject.GetComponentsInChildren<Renderer>();
+                foreach (var r in renderers)
+                {
+                    if (r.name == "MeshRocketDefaultBody")
+                    {
+                        bodyMesh = r.gameObject;
+                        break;
+                    }
+                }
+
+                if (bodyMesh)
+                {
+                    var goaList = misakiSkin.gameObjectActivations.ToList();
+                    SkinDef.GameObjectActivation goa = new SkinDef.GameObjectActivation
+                    {
+                        shouldActivate = false,
+                        gameObject = bodyMesh
+                    };
+                    goaList.Add(goa);
+                    misakiSkin.gameObjectActivations = goaList.ToArray();
+                }
             }
 
             RefreshNSE();
