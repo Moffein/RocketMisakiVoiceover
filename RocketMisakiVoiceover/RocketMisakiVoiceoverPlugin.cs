@@ -21,7 +21,7 @@ namespace RocketMisakiVoiceover
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.KrononConspirator.RocketMisaki", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.2.0")]
+    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.2.1")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonDust, buttonHurt, buttonTitle, buttonIntro, buttonThanks, buttonMuda, buttonNani, buttonCafe1, buttonCafe4;
@@ -127,7 +127,7 @@ namespace RocketMisakiVoiceover
 
                 if (bodyMesh)
                 {
-                    var goaList = misakiSkin.gameObjectActivations.ToList();
+                    var goaList = misakiSkin.gameObjectActivations.Where(g => g.gameObject.name != "MeshRocketDefaultShovel").ToList();
                     SkinDef.GameObjectActivation goa = new SkinDef.GameObjectActivation
                     {
                         shouldActivate = false,
