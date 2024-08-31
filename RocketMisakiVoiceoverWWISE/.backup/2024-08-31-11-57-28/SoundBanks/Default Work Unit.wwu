@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{48B505A9-768C-4298-BFE2-E222ECB747FC}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{48B505A9-768C-4298-BFE2-E222ECB747FC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="RocketMisakiSoundbank" ID="{0381664A-5249-4E05-9ED2-FC71BCC5B09A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_RocketMisaki_CommonSkill" ID="{5D548381-7F59-4063-98F3-5B010A6F81CF}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_ExSkill_Level" ID="{D3238518-9DCD-40A1-B764-56B4FAD0C326}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Lobby_bday" ID="{1FBFA39F-6109-4320-B9EE-6F94DB7D0109}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Defeat" ID="{969E67EB-9454-43A1-9544-826B78AF5C20}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Lobby_Halloween" ID="{A7E92A69-D1F4-4450-80AB-AEBD02185155}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_ExSkill_Level_1" ID="{DDC10CF3-CEA2-44B0-A1AF-695C7AC42800}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_TakeDamage" ID="{FDC8A69C-E47F-4528-881F-1517459EA892}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Relationship_Short" ID="{7F5ED11C-28CD-457B-B923-E23241FEC778}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_TitleDrop" ID="{DD8D3567-2D86-45DA-8418-4C0FCF14356E}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Relationship" ID="{53DF5AE5-A9F2-465D-8E33-8F990C3BCB9C}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Memorial4" ID="{86D4F243-AB8F-466D-90BF-C5FC7C7D3A64}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Thanks" ID="{E1254D8F-31A8-467E-8333-FC0F3C0265C9}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Victory" ID="{B33AFE73-69AD-46A7-AC19-38906A57A618}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_nani" ID="{B848F60C-D353-46AB-81EB-40AAA2357E52}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_AcquireScepter" ID="{E3288B52-D355-4745-A4F2-939C422437B7}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Cafe1" ID="{A55C0669-CCA6-482F-8235-847DA5425EC8}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_ExSkill" ID="{3020D536-82D8-4834-86ED-CDBA4FC43E86}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Lobby" ID="{2F19AD11-48A2-48B9-A7D2-7E0BF031DFCB}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Shout" ID="{071EE2CF-4D17-49CE-8EBB-D21CEAD695C7}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Spawn" ID="{E133C0B6-CCA8-49DC-B8F7-DDDA84876151}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Lobby_Newyear" ID="{614529FE-521F-4A01-8793-2FE956C387C4}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_TeleporterStart" ID="{9DB10955-1677-4A0B-B8F2-F543B919BC73}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_LowHealth" ID="{02DDA04D-BAB6-4B3F-807D-1E2D5B190FF1}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Intro" ID="{05079011-71CD-4C4D-B2E9-48B2FE0C52A1}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Cafe4" ID="{74D38A1B-DCE1-4D85-819A-37ED0C5E37F5}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_LevelUp" ID="{CA549D1D-ACAA-4DE0-9C37-40D8EC563CE4}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Blocked" ID="{5A484CE9-C57D-4F35-BBDC-23BECD1F187E}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RocketMisaki_Lobby_xmas" ID="{9A67F23C-5D30-4F4B-90EF-2C3767C23F14}" WorkUnitID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

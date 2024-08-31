@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{D8C8AE69-782D-4F91-A8AC-0F7BD7511A91}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_RocketMisaki_Lobby_Newyear" ID="{614529FE-521F-4A01-8793-2FE956C387C4}">
+					<ChildrenList>
+						<Action Name="" ID="{5CCE4FA5-FEBC-4C01-B9B4-58A7F84F0B62}" ShortID="369460769">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Season_NewYear" ID="{6EE2ABA0-AD91-44D1-ACE4-BA18533F84CE}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Lobby_bday" ID="{1FBFA39F-6109-4320-B9EE-6F94DB7D0109}">
+					<ChildrenList>
+						<Action Name="" ID="{0CA3CCED-43E5-4E01-A06B-87DFD0AD1935}" ShortID="619693959">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lobby_bday" ID="{F7CDF0EE-40A8-4E0A-978D-911C89D68AC9}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Lobby_Halloween" ID="{A7E92A69-D1F4-4450-80AB-AEBD02185155}">
+					<ChildrenList>
+						<Action Name="" ID="{C02B4852-A6DE-4F50-92A8-5948E6D7F442}" ShortID="528688355">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lobby_halloween" ID="{058F6D58-B9F3-4AD0-9AEA-6E9729DAE9C1}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Lobby_xmas" ID="{9A67F23C-5D30-4F4B-90EF-2C3767C23F14}">
+					<ChildrenList>
+						<Action Name="" ID="{31AAA1D5-C6D5-4E24-800C-580CE823A5DC}" ShortID="677539149">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Season_Xmas" ID="{60D70023-FCC2-4599-82C5-F87A967A856B}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_TitleDrop" ID="{DD8D3567-2D86-45DA-8418-4C0FCF14356E}">
+					<ChildrenList>
+						<Action Name="" ID="{C176BD6F-6958-4F34-B251-A381D5E16DFD}" ShortID="634115251">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Title" ID="{790753EC-1FA7-4C06-9789-F7C39E07E558}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Lobby" ID="{2F19AD11-48A2-48B9-A7D2-7E0BF031DFCB}">
+					<ChildrenList>
+						<Action Name="" ID="{5DD0DF3C-F6FB-49A4-993B-82855E5CBDF5}" ShortID="887097736">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lobby" ID="{8065884A-517D-44A7-A412-F6B5658EF2A8}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Blocked" ID="{5A484CE9-C57D-4F35-BBDC-23BECD1F187E}">
+					<ChildrenList>
+						<Action Name="" ID="{12D95A5D-EE18-41C5-BF61-A05C5C62E9CA}" ShortID="712791401">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Battle_Defense_1" ID="{C5EAF394-DB19-4229-9312-2AA8BF3B52B8}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_TakeDamage" ID="{FDC8A69C-E47F-4528-881F-1517459EA892}">
+					<ChildrenList>
+						<Action Name="" ID="{3535D6F0-ABDA-443D-9461-080599241856}" ShortID="578896504">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hurt" ID="{9012E6B1-E5BE-49EF-825A-8D6CE7D9EF40}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_LevelUp" ID="{CA549D1D-ACAA-4DE0-9C37-40D8EC563CE4}">
+					<ChildrenList>
+						<Action Name="" ID="{DA7066DD-F21A-42BB-9E0C-2AB891D7B366}" ShortID="559461678">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LevelUp" ID="{1F7BA4C8-9C32-480A-A043-75DCD798B2CA}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Spawn" ID="{E133C0B6-CCA8-49DC-B8F7-DDDA84876151}">
+					<ChildrenList>
+						<Action Name="" ID="{4EA54D2B-0A0B-462A-BA9D-2549074E44DE}" ShortID="858243791">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spawn" ID="{C9F0EACE-B958-42EB-B86D-981A0895DEC7}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Victory" ID="{B33AFE73-69AD-46A7-AC19-38906A57A618}">
+					<ChildrenList>
+						<Action Name="" ID="{A43EC0B0-B025-4A0E-9AA3-2B8C815BF9F0}" ShortID="598220176">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{B59E0F96-504A-478B-BB1F-E8CA8FD88628}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Relationship" ID="{53DF5AE5-A9F2-465D-8E33-8F990C3BCB9C}">
+					<ChildrenList>
+						<Action Name="" ID="{48E875DD-5115-44DF-BD17-3DDC09529135}" ShortID="256125839">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Relationship" ID="{3D08FA32-709E-4B8D-A8FF-58A119A7D6F0}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Relationship_Short" ID="{7F5ED11C-28CD-457B-B923-E23241FEC778}">
+					<ChildrenList>
+						<Action Name="" ID="{6CD08739-A41F-40B6-BBC6-F2CEBE5105FD}" ShortID="899251774">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Relationship_Short" ID="{4F422E73-9AF8-409F-B0DB-B8447D2E0AEF}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_AcquireScepter" ID="{E3288B52-D355-4745-A4F2-939C422437B7}">
+					<ChildrenList>
+						<Action Name="" ID="{A45F4B75-F2EA-4C64-85E1-DD7166B5DDA8}" ShortID="224508110">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_ExWeapon_Get" ID="{36B58A8B-1BB8-4B9D-B078-B51F4EBD2079}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_LowHealth" ID="{02DDA04D-BAB6-4B3F-807D-1E2D5B190FF1}">
+					<ChildrenList>
+						<Action Name="" ID="{5A97C0F6-B701-4C58-918D-755CC6543C8E}" ShortID="897849361">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Battle_BuffSelf_1" ID="{8AF1BD2D-CE3A-4E3F-8C1F-FE1C778D9053}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_ExSkill" ID="{3020D536-82D8-4834-86ED-CDBA4FC43E86}">
+					<ChildrenList>
+						<Action Name="" ID="{7264B170-93EF-469D-9536-10511DCEB73E}" ShortID="954465608">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ExSkill" ID="{2E2E928B-2368-41D4-90CE-3C9C8776EB1F}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_ExSkill_Level" ID="{D3238518-9DCD-40A1-B764-56B4FAD0C326}">
+					<ChildrenList>
+						<Action Name="" ID="{8D1E4EFE-F799-403D-8091-E672E61992CC}" ShortID="262604865">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ExSkill_Level" ID="{09B8A54B-F0CA-4323-9164-9E12404407E5}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_TeleporterStart" ID="{9DB10955-1677-4A0B-B8F2-F543B919BC73}">
+					<ChildrenList>
+						<Action Name="" ID="{E2C75066-71F2-472A-8804-259456F7AF40}" ShortID="31264391">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TeleporterStart" ID="{7A46EEC3-1EAE-4C47-8887-AFBDE9B55D20}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_CommonSkill" ID="{5D548381-7F59-4063-98F3-5B010A6F81CF}">
+					<ChildrenList>
+						<Action Name="" ID="{E84EC575-A07B-4126-8A58-A6F3EBCFD14D}" ShortID="690311588">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_CommonSkill" ID="{51CC45DF-DF30-498A-A465-DD4C9F460669}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_nani" ID="{B848F60C-D353-46AB-81EB-40AAA2357E52}">
+					<ChildrenList>
+						<Action Name="" ID="{4914FE82-646C-4661-A579-21A7FC819697}" ShortID="1032079326">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Formation_Select" ID="{3EB691E2-4D0E-4FB6-9997-D69C13747D17}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Memorial4" ID="{86D4F243-AB8F-466D-90BF-C5FC7C7D3A64}">
+					<ChildrenList>
+						<Action Name="" ID="{42F90BE9-754E-452E-A504-909258740B12}" ShortID="495042668">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Memorial4" ID="{D896DAE1-69B3-499C-A386-09F826227E65}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Defeat" ID="{969E67EB-9454-43A1-9544-826B78AF5C20}">
+					<ChildrenList>
+						<Action Name="" ID="{F2B2F68D-16AE-4026-93D5-71482CBFC07A}" ShortID="154955324">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Defeat" ID="{E15EFCF7-1F89-4EC0-BCA1-085A5159EED3}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Shout" ID="{071EE2CF-4D17-49CE-8EBB-D21CEAD695C7}">
+					<ChildrenList>
+						<Action Name="" ID="{59C0C00A-B483-472C-AB5B-79D69739746B}" ShortID="562955403">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shout" ID="{8F7E8FF3-DFC3-4AC1-BA44-03099317B2E2}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_ExSkill_Level_1" ID="{DDC10CF3-CEA2-44B0-A1AF-695C7AC42800}">
+					<ChildrenList>
+						<Action Name="" ID="{92B4443B-5FE8-4753-9C97-3CDD427E0A03}" ShortID="379380978">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_ExSkill_Level_1" ID="{ECB2DC33-3865-471B-92DF-DB6338F56D16}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Intro" ID="{05079011-71CD-4C4D-B2E9-48B2FE0C52A1}">
+					<ChildrenList>
+						<Action Name="" ID="{BEB3F1AF-9B6F-4BE2-AB94-3222F9BE9047}" ShortID="1042210169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Gachaget" ID="{7D536DB0-E84A-4F07-997F-DAC1DCD53F07}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Thanks" ID="{E1254D8F-31A8-467E-8333-FC0F3C0265C9}">
+					<ChildrenList>
+						<Action Name="" ID="{3AF94CAC-F9A0-4CD0-BBCD-597AA4AA3C84}" ShortID="589090361">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Thanks" ID="{3437D36E-17B2-419E-9CA4-33F1A86CC6DB}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Cafe1" ID="{A55C0669-CCA6-482F-8235-847DA5425EC8}">
+					<ChildrenList>
+						<Action Name="" ID="{C13EE20E-4E38-440A-82D8-48828C70FF1E}" ShortID="240898813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Cafe_monolog_1" ID="{B82E443F-9384-48C0-ABF6-B6C29C35A0E8}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RocketMisaki_Cafe4" ID="{74D38A1B-DCE1-4D85-819A-37ED0C5E37F5}">
+					<ChildrenList>
+						<Action Name="" ID="{097738BC-7AAF-43E5-9D17-F2E049310509}" ShortID="631487531">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Misaki_Cafe_monolog_4" ID="{C000BB64-3FE2-4A2D-A7E3-404640DDE33B}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

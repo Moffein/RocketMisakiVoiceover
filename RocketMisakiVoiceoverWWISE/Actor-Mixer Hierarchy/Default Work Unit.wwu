@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Master Mixer" ID="{38F4986D-3070-49DA-BFEC-EA51B5F8683B}" ShortID="482423327">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{6415F72E-D2FB-42F3-981A-C92D11622A1E}" ShortID="815704994">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Volume_SFX" ID="{7532A799-3737-427D-9628-186D4D397B81}" WorkUnitID="{782FBAAC-8259-4539-8A8E-7EB6B6380EFA}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{1927073D-D084-4CDD-9E71-985E614BDFCA}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>0</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4F6BCF35-7518-446C-9F2F-276A2D1D5F8B}"/>
@@ -1423,10 +1393,16 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
-											<Playlist>
-												<ItemRef Name="Misaki_Season_Birthday_1_1" ID="{D52ED4A5-B619-4E4C-8872-04D0B4F5B1E8}"/>
-												<ItemRef Name="Misaki_Season_Birthday_1_2" ID="{08EB65C4-0E6E-49F6-89C3-E96B4F3C75E1}"/>
-											</Playlist>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="Misaki_Season_Birthday_1_1" ID="{D52ED4A5-B619-4E4C-8872-04D0B4F5B1E8}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="Misaki_Season_Birthday_1_2" ID="{08EB65C4-0E6E-49F6-89C3-E96B4F3C75E1}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Lobby_halloween" ID="{058F6D58-B9F3-4AD0-9AEA-6E9729DAE9C1}" ShortID="480720166">
 											<PropertyList>
@@ -1502,10 +1478,16 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
-											<Playlist>
-												<ItemRef Name="Misaki_Season_Halloween_1_1" ID="{6AEC8A66-AFB1-4BD2-8955-3C866BBCBC03}"/>
-												<ItemRef Name="Misaki_Season_Halloween_1_2" ID="{5B1983F3-7430-4247-8676-7B14B5C24C4C}"/>
-											</Playlist>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="Misaki_Season_Halloween_1_1" ID="{6AEC8A66-AFB1-4BD2-8955-3C866BBCBC03}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="Misaki_Season_Halloween_1_2" ID="{5B1983F3-7430-4247-8676-7B14B5C24C4C}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Spawn" ID="{C9F0EACE-B958-42EB-B86D-981A0895DEC7}" ShortID="510822710">
 											<ReferenceList>
@@ -2089,10 +2071,16 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
-											<Playlist>
-												<ItemRef Name="Misaki_MemorialLobby_4_1" ID="{1F352938-CA9E-4FD7-AA31-AD9DDD929628}"/>
-												<ItemRef Name="Misaki_MemorialLobby_4_2" ID="{1B239BC1-D869-43D9-9450-7A616DE97CFD}"/>
-											</Playlist>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="Misaki_MemorialLobby_4_1" ID="{1F352938-CA9E-4FD7-AA31-AD9DDD929628}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="Misaki_MemorialLobby_4_2" ID="{1B239BC1-D869-43D9-9450-7A616DE97CFD}" WorkUnitID="{1908C6E9-EBC1-41BA-97DC-DB4B049F9400}"/>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Thanks" ID="{3437D36E-17B2-419E-9CA4-33F1A86CC6DB}" ShortID="893878706">
 											<ReferenceList>
@@ -2177,6 +2165,45 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{6415F72E-D2FB-42F3-981A-C92D11622A1E}" ShortID="815704994">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Volume_SFX" ID="{7532A799-3737-427D-9628-186D4D397B81}" WorkUnitID="{782FBAAC-8259-4539-8A8E-7EB6B6380EFA}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{1927073D-D084-4CDD-9E71-985E614BDFCA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
