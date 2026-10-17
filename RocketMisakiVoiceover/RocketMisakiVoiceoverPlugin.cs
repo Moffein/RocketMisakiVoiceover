@@ -20,7 +20,6 @@ namespace RocketMisakiVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInDependency("com.KrononConspirator.RocketMisaki", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "2.0.0")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
