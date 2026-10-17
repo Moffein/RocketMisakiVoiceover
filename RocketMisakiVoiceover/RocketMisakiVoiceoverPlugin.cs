@@ -21,7 +21,7 @@ namespace RocketMisakiVoiceover
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.EnforcerGang.RocketSurvivor", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.KrononConspirator.RocketMisaki", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "1.2.3")]
+    [BepInPlugin("com.Schale.RocketMisakiVoiceover", "RocketMisakiVoiceover", "2.0.0")]
     public class RocketMisakiVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonDust, buttonHurt, buttonTitle, buttonIntro, buttonThanks, buttonMuda, buttonNani, buttonCafe1, buttonCafe4;
@@ -87,24 +87,43 @@ namespace RocketMisakiVoiceover
         {
             BodyIndex rocketIndex = BodyCatalog.FindBodyIndex("RocketSurvivorBody");
 
-            SkinDef misakiSkin = null;
+            SkinDef misakiSkin1 = null;
+            SkinDef misakiSkin2 = null;
             SkinDef[] skins = SkinCatalog.FindSkinsForBody(rocketIndex);
             foreach (SkinDef skinDef in skins)
             {
-                if (skinDef.name == "RocketMisakiSkinDef")
+                if (skinDef.name == "DefMisakiRocket")
                 {
-                    misakiSkin = skinDef;
+                    misakiSkin1 = skinDef;
+                }
+                else if (skinDef.name == "DefMisakiRocketMaskDown")
+                {
+                    misakiSkin2 = skinDef;
+                }
+
+                if (misakiSkin1 && misakiSkin2)
+                {
                     break;
                 }
             }
 
-            if (!misakiSkin)
+            if (!misakiSkin1)
             {
-                Debug.LogError("RocketMisakiVoiceover: Rocket Misaki SkinDef not found. Voicelines will not work!");
+                Debug.LogError("RocketMisakiVoiceover: DefMisakiRocket SkinDef not found. Voicelines will not work!");
             }
             else
             {
-                VoiceoverInfo vo = new VoiceoverInfo(typeof(RocketMisakiVoiceoverComponent), misakiSkin, "RocketSurvivorBody");
+                VoiceoverInfo vo = new VoiceoverInfo(typeof(RocketMisakiVoiceoverComponent), misakiSkin1, "RocketSurvivorBody");
+                vo.selectActions += MisakiSelect;
+            }
+
+            if (!misakiSkin2)
+            {
+                Debug.LogError("RocketMisakiVoiceover: DefMisakiRocketMaskDown SkinDef not found. Voicelines will not work!");
+            }
+            else
+            {
+                VoiceoverInfo vo = new VoiceoverInfo(typeof(RocketMisakiVoiceoverComponent), misakiSkin2, "RocketSurvivorBody");
                 vo.selectActions += MisakiSelect;
             }
 
